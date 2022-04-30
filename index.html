@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thien An's dictionary</title>
+    <link rel="stylesheet" href="./essets/CSS/style.css">
+    <link rel="stylesheet" href="./essets/JS/main.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="loading">
+        <div class="circle">
+            
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="headerLogo">
+            <img src="./essets/IMG/th.jpg" alt="">
+            <h2>Thien An's dictionary</h2>    
+        </div>  
+    </div> 
+
+    <div class="overlay"></div>
+        <div class="modal-form d-flex">
+            <div class="main-modal d-flex">
+                <div class="group">
+                    <h3>Vocabulary</h3>
+                    <input type="text" id="word">
+                </div><br>
+                <div class="group">
+                    <h3>Pronounce</h3>
+                    <input type="text" id="pronounce">
+                </div><br>
+                <div class="group">
+                    <h3>Type</h3>
+                    <input type="text" id="type">
+                </div><br>   
+                <div class="group">
+                    <h3>Means</h3>
+                    <input type="text" id="means">
+                </div><br> 
+                <div class="group-submit">
+                    <button id="btn-add" onclick="addData()">Add</button>
+                    <button id="btn-cancel">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+    <nav id="nav">
+        <a href="search.html"><i class="fa fa-search" aria-hidden="true"></i></a>
+        <div class="btn-add d-flex">
+            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+        </div>
+        <div class="btn-delete d-flex">
+            <i class="fa fa-trash" aria-hidden="true"></i>
+        </div>
+        <button id="close-nav"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+    </nav>
+    
+    <div class="content">
+        <div id="taskBarTop">
+            <button id="toggle-nav"><i class="fa fa-bars" aria-hidden="true"></i></button> 
+        </div>
+        
+                <div class="table">
+                    <div class="navBar"></div>
+                    <table>
+                        <thead>
+                            <p id="top"></p>      
+                            <tr>
+                                <th class="id">No</th>
+                                <th class="mail">Word</th>
+                                <th class="des">Pronounce</th>
+                                <th class="Type">Type</th>
+                                <th class="Means">Means</th>
+                            </tr>
+                        </thead>
+                        <tbody class="tableBody">
+                            <tr><a href="#top" class="btn"><i class="fa-solid fa-arrow-up"></i></a></tr>
+                        </tbody>
+                    </table>
+                </div>
+    </div>
+    
+    <script src="./essets/JS/main.js" defer></script>
+
+</body>
+
+</html>

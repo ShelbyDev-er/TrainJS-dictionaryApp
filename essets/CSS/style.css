@@ -1,0 +1,383 @@
+.header .headerLogo {
+    display: flex;
+    background-color: #643333;
+    height: 82px;
+}
+
+.header .headerLogo img {
+    height: 80px;
+    width: 80px;
+    border: 2px solid #d4c19c;
+    border-radius: 100px;
+}
+
+.header .headerLogo h2 {
+    margin-left: 15px;
+    margin-top: 8px;
+    font-family: 'Square Peg', cursive;
+    font-size: 50px;
+    color: #ddceaf;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+  
+body {
+    background: rgb(255, 255, 255);
+}
+
+.header .headerLogo .searchBar { 
+    position: absolute;
+    right: 25px;
+    top: 15px; 
+}
+
+.header .headerLogo .searchBar input {
+    background-color: #ddceaf;
+    font-size: 20px;
+    font-family: 'Pacifico', cursive;
+    border: 4px solid #555555;
+    border-radius: 20px;
+    width: 300px;
+    height: 50px;
+}
+  
+/* content */
+
+body {
+    background-color: rgb(72 43 43);
+}
+
+header
+{
+    font-family: 'Pacifico', cursive;
+	text-align: center;
+	font-size: 25px;	
+}
+
+/* task bar */
+
+#taskBarTop {
+    background-color: rgb(100 51 51 / 78%);
+    width: 100%;
+    height: 40px;
+}
+
+#toggle-nav {
+    position: absolute;
+    right: 0px;
+    border: 3px solid #555555;
+    border-radius: 4px;
+    background-color: rgb(100 51 51 / 10%);
+    color: #ddceaf;
+    width: 50px;
+    height: 40px;
+    font-size: 1.75rem;
+}
+
+/* nav bar */
+
+#nav {
+    position: fixed;
+    top: 82px;
+    right: 0;
+    min-height: 100vh;
+    width: 0px;
+    background-color: rgb(100 51 51 / 78%);
+    padding-top: 3%;
+    overflow: hidden;
+    transition: width 0.3s ease-in-out;
+}
+
+#nav a {
+    text-decoration: none;
+    color: #d4c19c;
+    display: block;
+    padding: 35% 20%;
+    font-size: 30px;
+}
+
+#nav.active {
+    width: 50px;
+}
+
+#nav a:hover {
+    color: #ffffff;
+}
+
+#close-nav {
+    position:absolute;
+    left: 35%;
+    bottom: 10%;
+    background-color: transparent;
+    font-size: 30px;
+    color: #d4c19c;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+}
+
+#close-nav:hover {
+    color: #ffffff;
+}
+
+#tb {
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+
+/* scroll to top */
+
+.content .scrollbar .force-overflow .scroll-to-top {
+    position: relative;
+    left: 10px;
+    bottom: 10px;
+    background-color: #d4c19c;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+}
+
+.content .scrollbar .force-overflow .scroll-to-top i {
+    position: relative;
+    left: 8px;
+    top: 7px;
+}
+
+
+
+
+
+/* table */
+
+.content .table {
+    border: 1px solid rgb(0, 0, 0);
+    max-width: 70%;
+    margin-left: 15%;
+    background-color: #55555563;
+    color: #ddceaf;
+    font-family: 'Pacifico', cursive;
+}
+
+.content .table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.content .table table thead tr th {
+    font-size: 20px;
+    padding: 14px;
+} 
+
+.content .table table tbody tr th {
+    font-size: 15px;
+    padding: 14px;
+}
+
+.content .table table tbody tr th {
+    font-family: 'Pacifico', cursive;
+}
+
+
+/* button scroll to top */
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+html {
+    scroll-behavior: smooth;
+}
+  
+.table .btn {
+    position: fixed;
+    right: 5%;
+    bottom: 2%;
+    text-decoration: none;
+    border: 4px solid #555555;
+    border-radius: 5px;
+    color: #ddceaf;
+    background-color: #643333;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-family: 'Pacifico', cursive;
+}
+
+.table .btn:hover {
+    background-color: #691919;
+}
+
+/* Add */
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.activeModal {
+    z-index: 98;
+}
+
+
+.modal-form .main-modal {
+    flex-direction: column;
+    width: 17rem;
+    padding: 1.5rem;
+    background-color: #643333; 
+    transition: .2s ease-in-out;
+    transform: scale(0);
+}
+
+.modal-form .main-modal input {
+    background-color: #555555;
+    color: #ddceaf;
+}
+
+.modal-form .main-modal h3 {
+    color: #ddceaf;
+}
+
+
+.modal-form .showMainModal {
+    transform: scale(1);
+}
+
+/* .modal-form .main-modal .group */
+
+.modal-form .main-modal .group h3 {
+    font-size: 25px;
+    text-align: left;
+}
+
+.modal-form .main-modal .group input {
+    text-align: center;
+    border: none;
+    font-size: 1rem;
+    border-bottom: 1px solid gray;
+    outline: none;
+}
+
+.modal-form .main-modal .group-submit {
+    margin-left: 10px;
+}
+
+.modal-form .main-modal .group-submit button {
+    width: 5rem;
+    height: 2rem;
+    border: none;
+    outline: none;
+    margin: 0px 3px;
+    cursor: pointer;
+    color: #ddceaf;
+}
+
+.modal-form .main-modal .group-submit #btn-add {
+    background-color: #691919;
+    
+}
+
+.modal-form .main-modal .group-submit #btn-cancel {
+    background-color: #691919;
+}
+
+.btn-add {
+    position: fixed;
+    font-size: 30px;
+    padding: 28px 9px;
+    color: #ddceaf;
+    cursor: pointer;
+}
+
+.btn-add:hover {
+    color: rgb(255, 255, 255);
+}
+
+.overlay {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgb(0, 0, 0, .5);
+     z-index: 0;
+     opacity: 0;
+}
+
+.classShowOver {
+     z-index: 97;
+     opacity: 1;
+}
+
+
+ /* delete */
+
+.btn-delete {
+    font-size: 30px;
+    padding: 120px 12px;
+    color: #ddceaf;
+    cursor: pointer;
+}
+
+.btn-delete:hover {
+    color: rgb(255, 255, 255);
+}
+
+/* loading */
+
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rbg(0 0 0 / 20%);
+    z-index: 0;
+    opacity: 0;
+    transition: .3s ease-out;
+    pointer-events: none;
+}
+
+.loadingActive {
+    z-index: 100;
+    opacity: 1;
+}
+
+.loading .circle {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 7px dashed #fff;
+    border-radius: 100%;
+}
+
+@keyframes loadingAuto {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
